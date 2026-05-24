@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pokepedia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="../imagens-pokemon/favicon.ico" type="image/x-icon">
+
+<!-- ============================
+     NAVEGAÇÃO
+============================ -->
+<audio id="bgm" loop>
+  <source src="../audio/1-03. Title Screen.mp3" type="audio/mpeg">
+</audio>
+<nav>
+  <div class="nav-inner">
+    <a href="#hero"><img src="../imagens-pokemon/International_Pokémon_logo.svg.png" alt=""></a>
+    <ul class="nav-links">
+      <li><a href="#sobre">Região</a></li>
+      <li><a href="#starters">Iniciais</a></li>
+      <li><a href="#ginasios">Ginásios</a></li>
+      <li><a href="#elite4">Elite 4</a></li>
+      <li><a href="#lendarios">Lendários</a></li>
+      <li><a href="#team-rocket">Team Rocket</a></li>
+      <li><a href="#jogos">Jogos</a></li>
+      <li><a href="#curiosidades">Curiosidades</a></li>
+    </ul>
+    <div class="nav-item" data-name="Pokédex">
+      <div class="nav-ball">
+        <a href="https://pokemondb.net/pokedex/game/firered-leafgreen" target="_blank"><img src="../imagens-pokemon/pokebola.png" alt=""></a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================
+     HERO
+============================ -->
+<section id="hero">
+  <div class="stars">
+    <div class="star"></div><div class="star"></div><div class="star"></div>
+    <div class="star"></div><div class="star"></div><div class="star"></div>
+    <div class="star"></div><div class="star"></div><div class="star"></div>
+    <div class="star"></div><div class="star"></div><div class="star"></div>
+  </div>
+  <div class="mountains">
+    <div class="mountain mt1"></div>
+    <div class="mountain mt2"></div>
+    <div class="mountain mt5"></div>
+    <div class="mountain mt3"></div>
+    <div class="mountain mt4"></div>
+  </div>
+  <div class="ground"></div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow">Geração I · 1996</p>
+    <div class="hero-pokeball">
+      <img src="../imagens-pokemon/pokebola.png" alt="pokebola">
+    </div>
+    <h1 class="hero-title">BEM-VINDO À<br><span>REGIÃO DE KANTO</span></h1>
+    <p class="hero-subtitle">A região original que deu início à maior franquia de jogos da história. Explore cidades, Ginásios, Pokémon lendários e muito mais!</p>
+    <a href="#sobre" class="hero-cta" onclick="document.getElementById('bgm').play()">▶ INICIAR JORNADA</a>
+  </div>
+</section>
+
+<div class="pixel-divider"></div>
+
+<!-- ============================
+     SOBRE KANTO
+============================ -->
+<section id="sobre">
+  <div class="container">
+    <div class="sobre-grid">
+
+      <!-- Mapa -->
+      <div class="mapa-kanto reveal reveal-1">
+        <div class="map-placeholder">
+          <img src="../imagens-treinadores/mapa-ginasios.png" alt="">
+          <div class="city-dot pallet"   data-city="Pallet Town"></div>
+          <div class="city-dot viridian" data-city="Viridian City"></div>
+          <div class="city-dot pewter"   data-city="Pewter City"></div>
+          <div class="city-dot cerulean" data-city="Cerulean City"></div>
+          <div class="city-dot vermilion"data-city="Vermilion City"></div>
+          <div class="city-dot lavender" data-city="Lavender Town"></div>
+          <div class="city-dot celadon"  data-city="Celadon City"></div>
+          <div class="city-dot fuchsia"  data-city="Fuchsia City"></div>
+          <div class="city-dot saffron"  data-city="Saffron City"></div>
+          <div class="city-dot cinnabar" data-city="Cinnabar Island"></div>
+          <div class=" city-dot planalto" data-city="Planalto Índigo"></div>
+        </div>
+      </div>
+
+      <!-- Texto -->
+      <div class="sobre-text">
+        <span class="section-badge">Sobre a Região</span>
+        <h2 class="section-title">A TERRA QUE<br>COMEÇOU TUDO</h2>
+        <p>Kanto é a primeira região da franquia Pokémon, lançada ao mundo nos jogos Pokémon Red e Blue em 1996 no Japão. Inspirada na região de Kantō do Japão real, é o lar de 151 Pokémon originais.</p>
+        <p>Uma terra diversa com florestas densas, cavernas profundas, ilhas vulcânicas, cidades movimentadas e um oceano repleto de Pokémon aquáticos. Toda aventura começa em Pallet Town.</p>
+
+        <div class="info-boxes">
+          <div class="info-box reveal reveal-2">
+            <div class="label">Pokémon Nativos</div>
+            <div class="value">151</div>
+          </div>
+          <div class="info-box reveal reveal-3">
+            <div class="label">Ginásios</div>
+            <div class="value">8</div>
+          </div>
+          <div class="info-box reveal reveal-4">
+            <div class="label">Cidades</div>
+            <div class="value">10</div>
+          </div>
+          <div class="info-box reveal reveal-5">
+            <div class="label">Lançamento</div>
+            <div class="value">1996</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="pixel-divider"></div>
+
+<!-- ============================
+     STARTERS
+============================ -->
+<section id="starters">
+  <div class="container">
+    <span class="section-badge">Pokémon Iniciais</span>
+    <h2 class="section-title">ESCOLHA O SEU<br>PARCEIRO</h2>
+    <p class="section-lead">No início da jornada, o Professor Carvalho oferece ao treinador a escolha entre três Pokémon iniciais. Uma decisão que mudará tudo.</p>
+
+    <div class="starters-grid">
+
+      <!-- Bulbasaur -->
+      <div class="starter-card bulbasaur reveal reveal-1">
+        <div class="starter-art">
+          <img src="../imagens-pokemon/bulbasaur.png" alt="bulbasaur">
+        </div>
+        <div class="starter-body">
+          <div class="starter-number">#001</div>
+          <div class="starter-name">BULBASAUR</div>
+          <div class="type-badges">
+            <span class="type-badge type-planta">PLANTA</span>
+            <span class="type-badge type-veneno">VENENO</span>
+          </div>
+          <p class="starter-desc">Há uma semente nas costas deste Pokémon desde o nascimento. Ela cresce lentamente absorvendo os raios de sol. Evolui para Ivysaur ao nível 16 e Venusaur ao nível 32.</p>
+          <div class="starter-stats">
+            <div class="stat-row">
+              <span class="stat-name">HP</span>
+              <div class="stat-bar-bg"><div class="stat-bar" style="width:49%"></div></div>
+              <span class="stat-val">45</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-name">ATK</span>
+              <div class="stat-bar-bg"><div class="stat-bar" style="width:52%"></div></div>
+              <span class="stat-val">49</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-name">DEF</span>
+              <div class="stat-bar-bg"><div class="stat-bar" style="width:53%"></div></div>
+              <span class="stat-val">49</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-name">SPD</span>
+              <div class="stat-bar-bg"><div class="stat-bar" style="width:48%"></div></div>
+              <span class="stat-val">45</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Charmander -->
+      <div class="starter-card charmander reveal reveal-2">
+        <div class="starter-art">
+          <img src="../imagens-pokemon/charmander.png" alt="">
+        </div>
+        <div class="starter-body">
+          <div class="starter-number">#004</div>
+          <div class="starter-name">CHARMANDER</div>
+          <div class="type-badges">
+            <span class="type-badge type-fogo">FOGO</span>
+          </div>
+          <p class="starter-desc">A chama na ponta da cauda deste Pokémon indica sua vida. Se a chama apagar, Charmander não sobreviverá. Evolui para Charmeleon ao nível 16 e Charizard ao nível 36.</p>
+          <div class="starter-stats">
+            <div class="stat-row">
+              <span class="stat-name">HP</span>
+              <div class="stat-bar-bg"><div class="stat-bar" style="width:43%"></div></div>
+              <span class="stat-val">39</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-name">ATK</span>
+              <div class="stat-bar-bg"><div class="stat-bar" style="width:58%"></div></div>
+              <span class="stat-val">52</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-name">DEF</span>
+              <div class="stat-bar-bg"><div class="stat-bar" style="width:46%"></div></div>
+              <span class="stat-val">43</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-name">SPD</span>
+              <div class="stat-bar-bg"><div class="stat-bar" style="width:65%"></div></div>
+              <span class="stat-val">65</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Squirtle -->
+      <div class="starter-card squirtle reveal reveal-3">
+        <div class="starter-art">
+          <img src="../imagens-pokemon/squirtle.png" alt="Squirtle">
+        </div>
+        <div class="starter-body">
+          <div class="starter-number">#007</div>
+          <div class="starter-name">SQUIRTLE</div>
+          <div class="type-badges">
+            <span class="type-badge type-agua">ÁGUA</span>
+          </div>
+          <p class="starter-desc">A concha nas costas não é apenas proteção — ela também serve para recuar e causar danos com seus espinhos. Evolui para Wartortle ao nível 16 e Blastoise ao nível 36.</p>
+          <div class="starter-stats">
+            <div class="stat-row">
+              <span class="stat-name">HP</span>
+              <div class="stat-bar-bg"><div class="stat-bar" style="width:48%"></div></div>
+              <span class="stat-val">44</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-name">ATK</span>
+              <div class="stat-bar-bg"><div class="stat-bar" style="width:53%"></div></div>
+              <span class="stat-val">48</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-name">DEF</span>
+              <div class="stat-bar-bg"><div class="stat-bar" style="width:71%"></div></div>
+              <span class="stat-val">65</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-name">SPD</span>
+              <div class="stat-bar-bg"><div class="stat-bar" style="width:47%"></div></div>
+              <span class="stat-val">43</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="pixel-divider"></div>
+
+<!-- ============================
+     GINÁSIOS
+============================ -->
+<section id="ginasios">
+  <div class="container">
+    <span class="section-badge">Ginásios de Kanto</span>
+    <h2 class="section-title">OS 8 GINÁSIOS<br>DA REGIÃO</h2>
+    <p class="section-lead">Para desafiar a Liga Pokémon, o treinador precisa colecionar as 8 Insígnias de Ginásio de Kanto. Cada líder domina um tipo diferente.</p>
+
+    <div class="gym-grid">
+
+      <div class="gym-card reveal reveal-1">
+        <div class="gym-header gym-g1">
+          <img src="../imagens-treinadores/brock.png" alt="brock">
+          <div class="gym-leader">BROCK</div>
+        </div>
+        <div class="gym-body">
+          <div class="gym-city">Pewter City</div>
+          <div class="gym-type-row"><span class="gym-type gt-pedra">PEDRA</span></div>
+          <p class="gym-desc">O líder inabalável de Pewter. Especialista em tipos Pedra, seu Onix é seu parceiro mais famoso. Concede a Insígnia Cinza.</p>
+          <div class="gym-badge-img">
+            <img src="../imagens-treinadores/pedra.png" alt="insignia de pedra">
+          </div>
+        </div>
+      </div>
+
+      <div class="gym-card reveal reveal-2">
+        <div class="gym-header gym-g2">
+          <img src="../imagens-treinadores/misty.png" alt="misty">
+          <div class="gym-leader">MISTY</div>
+        </div>
+        <div class="gym-body">
+          <div class="gym-city">Cerulean City</div>
+          <div class="gym-type-row"><span class="gym-type gt-agua">ÁGUA</span></div>
+          <p class="gym-desc">A Sereia de Cerulean. Usa Pokémon do tipo Água com maestria, em especial seu Starmie. Concede a Insígnia Cascata.</p>
+          <div class="gym-badge-img">
+            <img src="../imagens-treinadores/agua.png" alt="insignia de agua">
+          </div>
+        </div>
+      </div>
+
+      <div class="gym-card reveal reveal-3">
+        <div class="gym-header gym-g3">
+          <img src="../imagens-treinadores/lt.surge.webp" alt="Lt.Surge">
+          <div class="gym-leader">LT. SURGE</div>
+        </div>
+        <div class="gym-body">
+          <div class="gym-city">Vermilion City</div>
+          <div class="gym-type-row"><span class="gym-type gt-eletrico">ELÉTRICO</span></div>
+          <p class="gym-desc">O Tenente americano defende o Ginásio de Vermilion com Pokémon elétricos. Seu Raichu é devastador. Concede a Insígnia Trovão.</p>
+          <div class="gym-badge-img">
+            <img src="../imagens-treinadores/trovao.png" alt="insignia do trovao">
+          </div>
+        </div>
+      </div>
+
+      <div class="gym-card reveal reveal-4">
+        <div class="gym-header gym-g4">
+          <img src="../imagens-treinadores/erika.webp" alt="erika">
+          <div class="gym-leader">ERIKA</div>
+        </div>
+        <div class="gym-body">
+          <div class="gym-city">Celadon City</div>
+          <div class="gym-type-row"><span class="gym-type gt-veneno">VENENO</span></div>
+          <p class="gym-desc">A jovem líder relaxada de Celadon usa Pokémon do tipo Planta e Veneno. Muitas vezes adormece nas batalhas! Concede a Insígnia Arco-Íris.</p>
+          <div class="gym-badge-img">
+            <img src="../imagens-treinadores/arco-iris.png" alt="insignia do arco-iris">
+          </div>
+        </div>
+      </div>
+
+      <div class="gym-card reveal reveal-1">
+        <div class="gym-header gym-g5">
+          <img src="../imagens-treinadores/koga.webp" alt="koga">
+          <div class="gym-leader">KOGA</div>
+        </div>
+        <div class="gym-body">
+          <div class="gym-city">Fuchsia City</div>
+          <div class="gym-type-row"><span class="gym-type gt-veneno">VENENO</span></div>
+          <p class="gym-desc">O ninja mestre de Fuchsia usa venenos e estratégias traiçoeiras. Pai de Janine, futura líder. Concede a Insígnia Alma.</p>
+          <div class="gym-badge-img">
+            <img src="../imagens-treinadores/alma.png" alt="insignia da alma">
+          </div>
+        </div>
+      </div>
+
+      <div class="gym-card reveal reveal-2">
+        <div class="gym-header gym-g6">
+          <img src="../imagens-treinadores/sabrina.webp" alt="sabrina">
+          <div class="gym-leader">SABRINA</div>
+        </div>
+        <div class="gym-body">
+          <div class="gym-city">Saffron City</div>
+          <div class="gym-type-row"><span class="gym-type gt-psiquico">PSÍQUICO</span></div>
+          <p class="gym-desc">A poderosa Sabrina domina o tipo Psíquico com habilidades sobrenaturais reais. Sua Alakazam é lendária. Concede a Insígnia Pântano.</p>
+          <div class="gym-badge-img">
+            <img src="../imagens-treinadores/pantano.png" alt="insignia do pantano">
+          </div>
+        </div>
+      </div>
+
+      <div class="gym-card reveal reveal-3">
+        <div class="gym-header gym-g7">
+          <img src="../imagens-treinadores/blaine.webp" alt="blaine">
+          <div class="gym-leader">BLAINE</div>
+        </div>
+        <div class="gym-body">
+          <div class="gym-city">Cinnabar Island</div>
+          <div class="gym-type-row"><span class="gym-type gt-fogo">FOGO</span></div>
+          <p class="gym-desc">O exuberante cientista de Cinnabar Island. Especialista em tipo Fogo, seu Arcanine e Magmar são formidáveis. Concede a Insígnia Vulcão.</p>
+          <div class="gym-badge-img">
+            <img src="../imagens-treinadores/vulcao.png" alt="insignia do vulcao">
+          </div>
+        </div>
+      </div>
+
+      <div class="gym-card reveal reveal-4">
+        <div class="gym-header gym-g8">
+          <img src="../imagens-treinadores/giovanni.webp" alt="giovanni">
+          <div class="gym-leader">GIOVANNI</div>
+        </div>
+        <div class="gym-body">
+          <div class="gym-city">Viridian City</div>
+          <div class="gym-type-row"><span class="gym-type gt-terra">TERRA</span></div>
+          <p class="gym-desc">O misterioso líder de Viridian esconde um grande segredo: é também o chefe do Team Rocket! Domina o tipo Terra. Concede a Insígnia Terra.</p>
+          <div class="gym-badge-img">
+            <img src="../imagens-treinadores/terra.png" alt="insignia da terra">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="pixel-divider"></div>
+
+<!-- ============================
+     ELITE 4 + CAMPEÃO
+============================ -->
+<section id="elite4">
+  <div class="container">
+    <span class="section-badge">Liga Pokémon</span>
+    <h2 class="section-title">ELITE QUATRO<br>E CAMPEÃO</h2>
+    <p class="section-lead">Com as 8 insígnias, o treinador pode desafiar o Salão da Fama. Quatro mestres e um campeão esperam pelo desafio final.</p>
+
+    <div class="elite-grid">
+
+      <div class="elite-card elite-e1 reveal reveal-1">
+        <div class="elite-portrait">
+          <img src="../imagens-treinadores/lorelei1.png" alt="lorelei">
+        </div>
+        <div class="elite-body">
+          <div class="elite-name">LORELEI</div>
+          <p class="elite-spec">Mestra do Tipo Gelo e Água. Usa Dewgong, Cloyster, Slowbro, Jynx e Lapras.</p>
+        </div>
+      </div>
+
+      <div class="elite-card elite-e2 reveal reveal-2">
+        <div class="elite-portrait">
+          <img src="../imagens-treinadores/bruno.png" alt="bruno">
+        </div>
+        <div class="elite-body">
+          <div class="elite-name">BRUNO</div>
+          <p class="elite-spec">Mestre do Tipo Lutador e Pedra. Usa Onix, Hitmonchan, Hitmonlee e Machamp.</p>
+        </div>
+      </div>
+
+      <div class="elite-card elite-e3 reveal reveal-3">
+        <div class="elite-portrait">
+          <img src="../imagens-treinadores/agatha.webp" alt="agatha">
+        </div>
+        <div class="elite-body">
+          <div class="elite-name">AGATHA</div>
+          <p class="elite-spec">Mestra do Tipo Fantasma e Veneno. Usa Gengar, Haunter e Arbok. Antiga rival de Oak.</p>
+        </div>
+      </div>
+
+      <div class="elite-card elite-e4 reveal reveal-4">
+        <div class="elite-portrait">
+          <img src="../imagens-treinadores/lance.png" alt="lance">
+        </div>
+        <div class="elite-body">
+          <div class="elite-name">LANCE</div>
+          <p class="elite-spec">O Mestre Dragão. Usa Gyarados, Dragonair e Dragonite. Torna-se Campeão em Johto.</p>
+        </div>
+      </div>
+
+      <div class="elite-card champion reveal reveal-5">
+        <div class="elite-portrait">
+          <img src="../imagens-treinadores/blue.webp" alt="blue">
+        </div>
+        <div class="elite-body">
+          <div class="elite-name">BLUE<br>(GARY)</div>
+          <p class="elite-spec">O Campeão de Kanto. Rival do protagonista desde Pallet Town. Usa time balanceado com Rhydon, Alakazam, Gyarados, Arcanine e Exeggutor.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="pixel-divider"></div>
+
+<!-- ============================
+     LENDÁRIOS
+============================ -->
+<section id="lendarios">
+  <div class="container">
+    <span class="section-badge">Pokémon Lendários</span>
+    <h2 class="section-title">CRIATURAS<br>LENDÁRIAS</h2>
+    <p class="section-lead">Kanto abriga alguns dos Pokémon mais poderosos e misteriosos já descobertos. Encará-los é um desafio para treinadores de elite.</p>
+
+    <div class="lend-grid">
+
+      <div class="lend-card lend-articuno reveal reveal-1">
+        <img src="../imagens-pokemon/articuno.png" alt="Articuno">
+        <div class="lend-body">
+          <div class="lend-number">#144 — GELO / VOADOR</div>
+          <div class="lend-name">ARTICUNO</div>
+          <p class="lend-desc">O Pássaro Congelante. Vive nas profundezas de Seafoam Islands. Diz-se que aparece para salvar viajantes perdidos no frio.</p>
+        </div>
+      </div>
+
+      <div class="lend-card lend-zapdos reveal reveal-2">
+        <img src="../imagens-pokemon/zaptos.png" alt="Zaptos">
+        <div class="lend-body">
+          <div class="lend-number">#145 — ELÉTRICO / VOADOR</div>
+          <div class="lend-name">ZAPDOS</div>
+          <p class="lend-desc">O Pássaro Elétrico. Habita a Usina Abandonada. Cada batida de asa libera faíscas. Aparece durante tempestades de raios.</p>
+        </div>
+      </div>
+
+      <div class="lend-card lend-moltres reveal reveal-3">
+        <img src="../imagens-pokemon/moltres.png" alt="Moltres">
+        <div class="lend-body">
+          <div class="lend-number">#146 — FOGO / VOADOR</div>
+          <div class="lend-name">MOLTRES</div>
+          <p class="lend-desc">O Pássaro de Fogo. Habita o Mt. Ember. Ao se ferir, mergulha em lava vulcânica para se curar e renascer mais forte.</p>
+        </div>
+      </div>
+
+      <div class="lend-card lend-mewtwo reveal reveal-4">
+        <img src="../imagens-pokemon/mewtwo.png" alt="Mewtwo">
+        <div class="lend-body">
+          <div class="lend-number">#150 — PSÍQUICO</div>
+          <div class="lend-name">MEWTWO</div>
+          <p class="lend-desc">Criado em laboratório a partir do DNA de Mew. O mais poderoso de todos. Habita Cerulean Cave após os eventos do jogo. Considera-se o Pokémon mais forte de Kanto.</p>
+        </div>
+      </div>
+
+      <div class="lend-card lend-mew reveal reveal-5">
+        <img src="../imagens-pokemon/mew.png" alt="Mew">
+        <div class="lend-body">
+          <div class="lend-number">#151 — PSÍQUICO</div>
+          <div class="lend-name">MEW</div>
+          <p class="lend-desc">O Pokémon Novo Espécies. Acredita-se que contém o DNA de todos os Pokémon. Extremamente raro, foi obtido originalmente apenas em eventos especiais.</p>
+        </div>
+      </div>
+
+      <div class="lend-card lend-dragonite reveal reveal-6">
+        <img src="../imagens-pokemon/dragonite.png" alt="Dragonite">
+        <div class="lend-body">
+          <div class="lend-number">#149 — DRAGÃO / VOADOR</div>
+          <div class="lend-name">DRAGONITE</div>
+          <p class="lend-desc">O lendário Dragão de Kanto. Habita uma ilha misteriosa. Diz-se que guia navios e viajantes perdidos no oceano de volta à segurança.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="pixel-divider"></div>
+
+<!-- ============================
+     TEAM ROCKET
+============================ -->
+<section id="team-rocket">
+  <div class="container">
+    <div class="rocket-layout">
+
+      <div class="rocket-visual">
+        <div class="rocket-logo">
+          <img src="../imagens-treinadores/equipe-rocket.png" alt="equipe rocket">
+        </div>
+        <p class="rocket-motto">
+          "Preparem-se para a encrenca <br>
+          Encrenca em dobro <br>
+          <br>
+          Para proteger o mundo da devastação <br>
+          Para unir as pessoas de nossa nação <br>
+          Para denunciar os males da verdade e do amor <br>
+          Para estender o nosso poder às estrelas"
+        </p>
+      </div>
+
+      <div class="rocket-text">
+        <span class="section-badge">Vilões</span>
+        <h2 class="section-title">TEAM ROCKET</h2>
+        <p class="section-lead">A organização criminosa que aterroriza Kanto, liderada pelo misterioso Giovanni. Seu objetivo é capturar e usar Pokémon para o lucro e o poder.</p>
+
+        <div class="rocket-members">
+          <div class="member-card reveal reveal-1">
+            <span class="member-emoji">
+              <img src="../imagens-treinadores/giovanni.webp" alt="giovanni">
+            </span>
+            <div class="member-name">GIOVANNI</div>
+            <div class="member-role">Líder Supremo · Líder do Ginásio de Viridian</div>
+          </div>
+          <div class="member-card reveal reveal-2">
+            <span class="member-emoji">
+              <img src="../imagens-treinadores/jessie.webp" alt="jessie">
+            </span>
+            <div class="member-name">JESSIE</div>
+            <div class="member-role">Agente · Parceira de James</div>
+          </div>
+          <div class="member-card reveal reveal-3">
+            <span class="member-emoji">
+              <img src="../imagens-treinadores/james.png" alt="James">
+            </span>
+            <div class="member-name">JAMES</div>
+            <div class="member-role">Agente · Parceiro de Jessie</div>
+          </div>
+          <div class="member-card reveal reveal-4">
+            <span class="member-emoji">
+              <img src="../imagens-pokemon/Meowth.png" alt="Meowth">
+            </span>
+            <div class="member-name">MEOWTH</div>
+            <div class="member-role">Pokémon falante · Mascote do trio</div>
+          </div>
+          <div class="member-card reveal reveal-5">
+            <span class="member-emoji">
+              <img src="../imagens-treinadores/agentes.webp" alt="agentes">
+            </span>
+            <div class="member-name">AGENTES</div>
+            <div class="member-role">Centenas de membros espalhados por Kanto</div>
+          </div>
+          <div class="member-card reveal reveal-6">
+            <span class="member-emoji">
+              <img src="../imagens-treinadores/Silph_Co_FRLG.webp" alt="silph">
+            </span>
+            <div class="member-name">SILPH CO.</div>
+            <div class="member-role">Empresa infiltrada em Saffron City</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="pixel-divider"></div>
+
+<!-- ============================
+     JOGOS & MÍDIAS
+============================ -->
+<section id="jogos">
+  <div class="container">
+    <span class="section-badge">Franquia</span>
+    <h2 class="section-title">JOGOS E MÍDIAS<br>DE KANTO</h2>
+    <p class="section-lead">Kanto foi revisitada em múltiplos jogos, séries e filmes ao longo dos anos, cada um trazendo novas perspectivas sobre a região original.</p>
+
+    <div class="jogos-grid">
+
+      <div class="jogo-card reveal reveal-1">
+        <div class="jogo-cover jg-rb">
+          <span class="poke-emoji">
+            <img src="../imagens-pokemon/red.jpg" alt="red">
+          </span>
+        </div>
+        <div class="jogo-body">
+          <div class="jogo-year">1996 · JAPÃO — 1998 · OCIDENTE</div>
+          <div class="jogo-name">POKÉMON RED & BLUE</div>
+          <p class="jogo-desc">Os jogos que iniciaram tudo. Lançados originalmente no Game Boy, introduziram os 151 Pokémon originais e estabeleceram a fórmula clássica da série.</p>
+          <div class="platform-chips">
+            <span class="chip">GAME BOY</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="jogo-card reveal reveal-2">
+        <div class="jogo-cover jg-y">
+          <span class="poke-emoji">
+            <img src="../imagens-pokemon/yellow.jpg" alt="yellow">
+          </span>
+        </div>
+        <div class="jogo-body">
+          <div class="jogo-year">1998 · JAPÃO — 2000 · OCIDENTE</div>
+          <div class="jogo-name">POKÉMON YELLOW</div>
+          <p class="jogo-desc">Versão especial inspirada no anime. O jogador começa com um Pikachu que segue sem Pokébola. Jessie, James e Meowth aparecem como rivais.</p>
+          <div class="platform-chips">
+            <span class="chip">GAME BOY COLOR</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="jogo-card reveal reveal-3">
+        <div class="jogo-cover jg-fr">
+          <span class="poke-emoji">
+            <img src="../imagens-pokemon/fire-red (1).jpg" alt="fire-red">
+          </span>
+        </div>
+        <div class="jogo-body">
+          <div class="jogo-year">2004</div>
+          <div class="jogo-name">FIRE RED &amp; LEAF GREEN</div>
+          <p class="jogo-desc">Remakes completos de Red e Blue para o Game Boy Advance. Gráficos atualizados, novas mecânicas e conexão com as Ilhas Sevii para mais conteúdo.</p>
+          <div class="platform-chips">
+            <span class="chip">GAME BOY ADVANCE</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="jogo-card reveal reveal-4">
+        <div class="jogo-cover jg-hgss">
+          <span class="poke-emoji">
+            <img src="../imagens-pokemon/heart-gold.jpg" alt="heart-gold">
+          </span>
+        </div>
+        <div class="jogo-body">
+          <div class="jogo-year">2009 · JAPÃO — 2010 · OCIDENTE</div>
+          <div class="jogo-name">HEARTGOLD &amp; SOULSILVER</div>
+          <p class="jogo-desc">Jogos de Johto com Kanto inteira explorável após a Liga. Os jogadores podem revisitar todos os 8 ginásios de Kanto e enfrentar os líderes atualizados.</p>
+          <div class="platform-chips">
+            <span class="chip">NINTENDO DS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="jogo-card reveal reveal-5">
+        <div class="jogo-cover jg-lgpe">
+          <span class="poke-emoji">
+            <img src="../imagens-pokemon/lets-go-pikachu.avif" alt="">
+          </span>
+        </div>
+        <div class="jogo-body">
+          <div class="jogo-year">2018</div>
+          <div class="jogo-name">LET'S GO PIKACHU &amp; EEVEE</div>
+          <p class="jogo-desc">Reinvenção de Yellow para o Switch integrada ao Pokémon GO. Captura estilo smartphone, co-op local e visual completamente reconstruído em 3D.</p>
+          <div class="platform-chips">
+            <span class="chip">NINTENDO SWITCH</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="jogo-card reveal reveal-6">
+        <div class="jogo-cover jg-anime">
+          <span class="poke-emoji">
+            <img src="../imagens-pokemon/pokemon.jpg" alt="pokemon">
+          </span>
+        </div>
+        <div class="jogo-body">
+          <div class="jogo-year">1997 — PRESENTE</div>
+          <div class="jogo-name">ANIME POKÉMON — SÉRIE ORIGINAL</div>
+          <p class="jogo-desc">A série animada que conquistou o mundo começa em Pallet Town com Ash Ketchum e Pikachu. As primeiras 5 temporadas se passam inteiramente em Kanto e nas Ilhas Orange.</p>
+          <div class="platform-chips">
+            <span class="chip">TV · FILMES</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="pixel-divider"></div>
+
+<!-- ============================
+     CURIOSIDADES
+============================ -->
+<section id="curiosidades">
+  <div class="container">
+    <span class="section-badge">Você Sabia?</span>
+    <h2 class="section-title">CURIOSIDADES<br>DE KANTO</h2>
+    <p class="section-lead">A região de Kanto está cheia de segredos, referências e fatos surpreendentes que nem os treinadores mais experientes conhecem.</p>
+
+    <div class="trivia-grid">
+
+      <div class="trivia-card reveal reveal-1">
+        <span class="trivia-icon">
+          <img src="../imagens-treinadores/mapa-ginasios.png" alt="Kanto">
+        </span>
+        <p class="trivia-q">KANTO É BASEADA NO JAPÃO REAL</p>
+        <p class="trivia-a">A região de Kanto foi inspirada na região de Kantō do Japão, onde fica Tóquio. Cidades como Celadon (Tóquio), Saffron e Pewter têm equivalentes reais.</p>
+      </div>
+
+      <div class="trivia-card reveal reveal-2">
+        <span class="trivia-icon">
+          <img src="../imagens-treinadores/pokemon-lets-go-professor-oak-agatha-key-visual.avif" alt="oak vs agatha">
+        </span>
+        <p class="trivia-q">PROFESSOR OAK E AGATHA FORAM RIVAIS</p>
+        <p class="trivia-a">Agatha menciona no jogo que o Professor Carvalho (Oak) foi um grande treinador em sua juventude e que ela ainda guarda rancor por ele ter "amolecido".</p>
+      </div>
+
+      <div class="trivia-card reveal reveal-3">
+        <span class="trivia-icon">
+          <img src="../imagens-treinadores/lavender.png" alt="lavender tower">
+        </span>
+        <p class="trivia-q">LAVENDER TOWN TEM UMA HISTÓRIA SOMBRIA</p>
+        <p class="trivia-a">A trilha sonora original de Lavender Town na versão japonesa causou relatos de desconforto em crianças. A música foi alterada nas versões ocidentais por precaução.</p>
+      </div>
+
+      <div class="trivia-card reveal reveal-4">
+        <span class="trivia-icon">
+          <img src="../imagens-pokemon/kanto-starters_e8yg.jpg" alt="iniciais">
+        </span>
+        <p class="trivia-q">151 POKÉMON FORAM ESCOLHA DELIBERADA</p>
+        <p class="trivia-a">Satoshi Tajiri projetou 151 Pokémon pois esse era o limite de memória do Game Boy. Mew foi adicionado secretamente por um desenvolvedor sem que Tajiri soubesse inicialmente.</p>
+      </div>
+
+      <div class="trivia-card reveal reveal-5">
+        <span class="trivia-icon">
+          <img src="../imagens-pokemon/mewtwo.png" alt="mewtwo">
+        </span>
+        <p class="trivia-q">MEWTWO FOI CRIADO A PARTIR DE MEW</p>
+        <p class="trivia-a">Cientistas do Team Rocket clonaram o DNA fossilizado de Mew para criar Mewtwo. A história completa está no Pokémon Mansion de Cinnabar Island, em diários espalhados pelo prédio.</p>
+      </div>
+
+      <div class="trivia-card reveal reveal-6">
+        <span class="trivia-icon">
+          <img src="../imagens-pokemon/Pikachu-PNG-Picture.png" alt="Pikachu">
+        </span>
+        <p class="trivia-q">MAIOR FRANQUIA DA HISTÓRIA</p>
+        <p class="trivia-a">Pokémon é a franquia de mídia mais lucrativa de todos os tempos, com mais de US$ 150 bilhões em receita acumulada, superando Star Wars, Hello Kitty e Marvel.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================
+     FOOTER
+============================ -->
+<footer>
+  <div class="footer-logo"><img src="../imagens-pokemon/International_Pokémon_logo.svg.png" alt=""></div>
+  <p class="footer-sub">Um guia completo sobre a Região Original de Kanto — Geração I</p>
+  <div class="footer-divider"></div>
+  <p class="footer-copy">
+    PIXELZONE<br>
+    EMERSON · HIGOR · JAMERSON
+  </p>
+</footer>
+
+</body>
+</html>
+
